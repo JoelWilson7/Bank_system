@@ -8,7 +8,7 @@ namespace Bank_system
 {
     internal class Transaction
     {
-        public string TransactionID {  get; set; }
+        public string TransactionID {  get; set; } // för att transactions ska identifieras
         public int IdNumber { get; set; }
         public int Amount { get; set; }
 

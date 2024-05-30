@@ -8,7 +8,7 @@ namespace Bank_system
 {
     public class Account
     {
-        public int IdNumber { get; set; }
+        public int IdNumber { get; set; } 
         public string Name { get; set; }
         public int Balance { get; set; }
 
@@ -16,9 +16,9 @@ namespace Bank_system
         {
             IdNumber = idNumber;
             Name = name;
-            Balance = 0;
+            Balance = 0; // Balance börjar på 0
         }
-        public void Deposite(int amount) 
+        public void Deposite(int amount)  // du kan lägga in pengar i kontot
         { 
             if (0 < amount)
             {
@@ -29,7 +29,7 @@ namespace Bank_system
                 return;
             }
         }
-        public void Withdraw(int amount)
+        public void Withdraw(int amount) // du kan ta ut pengar i kontot
         {
             if (Balance >= amount && amount > 0)
             {
